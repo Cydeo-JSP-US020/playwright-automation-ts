@@ -1,0 +1,22 @@
+{
+  "name": "playwright-automation-ts",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "tests:headless": "npx playwright test",
+    "tests:headed": "npx playwright test --headed",
+    "test:specific:headless": "npx playwright test --grep file-name.spec.ts",
+    "test:specific:headed": "npx playwright test --grep file-name.spec.ts --headed",
+    "test:tag:headless": "npx playwright test --grep @failed",
+    "test:tag:headed": "npx playwright test --grep @custom-fixture --headed",
+    "report": "npx playwright show-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.64.1",
+    "@types/node": "^26.6.5"
+  }
+}
